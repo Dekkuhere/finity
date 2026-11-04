@@ -1,0 +1,2 @@
+.budget-card { transition: border-color .2s; }
+.budget-card:hover { border-color: #cbd5e1; }

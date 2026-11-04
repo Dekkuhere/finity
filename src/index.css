@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme colours: light = original Finity look, dark = slate variant. Toggled via the "dark" class on <html>. */
+:root {
+  color-scheme: light;
+  --white: 255 255 255;
+  --slate-50: 248 250 252;
+  --slate-100: 241 245 249;
+  --slate-200: 226 232 240;
+  --slate-300: 203 213 225;
+  --slate-400: 148 163 184;
+  --slate-500: 100 116 139;
+  --slate-600: 71 85 105;
+  --slate-700: 51 65 85;
+  --slate-800: 30 41 59;
+  --slate-900: 15 23 42;
+  --emerald-50: 236 253 245;
+  --emerald-100: 209 250 229;
+  --emerald-200: 167 243 208;
+  --emerald-400: 52 211 153;
+  --emerald-500: 16 185 129;
+  --emerald-600: 5 150 105;
+  --emerald-700: 4 120 87;
+  --emerald-800: 6 95 70;
+  --emerald-900: 6 78 59;
+  --rose-50: 255 241 242;
+  --rose-400: 251 113 133;
+  --rose-500: 244 63 94;
+  --rose-600: 225 29 72;
+  --indigo-50: 238 242 255;
+  --indigo-100: 224 231 255;
+  --indigo-500: 99 102 241;
+  --indigo-600: 79 70 229;
+}
+.dark {
+  color-scheme: dark;
+  --white: 15 23 42;
+  --slate-50: 2 6 23;
+  --slate-100: 30 41 59;
+  --slate-200: 51 65 85;
+  --slate-300: 71 85 105;
+  --slate-400: 116 130 153;
+  --slate-500: 148 163 184;
+  --slate-600: 176 188 205;
+  --slate-700: 203 213 225;
+  --slate-800: 226 232 240;
+  --slate-900: 241 245 249;
+  --emerald-50: 6 36 28;
+  --emerald-100: 8 51 39;
+  --emerald-200: 6 78 59;
+  --emerald-400: 5 150 105;
+  --emerald-500: 16 185 129;
+  --emerald-600: 52 211 153;
+  --emerald-700: 110 231 183;
+  --emerald-800: 167 243 208;
+  --emerald-900: 209 250 229;
+  --rose-50: 60 14 25;
+  --rose-400: 251 113 133;
+  --rose-500: 244 63 94;
+  --rose-600: 251 113 133;
+  --indigo-50: 30 27 75;
+  --indigo-100: 49 46 129;
+  --indigo-500: 129 140 248;
+  --indigo-600: 165 180 252;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgb(var(--slate-300)); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: rgb(var(--slate-400)); }
+.glass-card { background: rgb(var(--white) / 0.85); backdrop-filter: blur(12px); }
+.gradient-border { background: linear-gradient(135deg, rgb(var(--emerald-500) / 0.2), rgb(var(--indigo-500) / 0.2)); }
